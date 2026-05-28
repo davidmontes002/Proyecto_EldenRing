@@ -40,6 +40,27 @@ header {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
 }
 
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--color-3);
+    /* Dorado claro para los enlaces del menú */
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    padding: 0.5rem 0;
+}
+
+header nav ul li a:hover {
+    color: var(--color-5);
+    /* Se ilumina en crema al pasar el cursor */
+}
+
 .logo {
     font-size: 1.8rem;
     font-weight: 800;
@@ -207,4 +228,43 @@ footer {
     .nav-grid {
         padding: 0 2rem 2rem;
     }
+}
+
+/* --- Estilos Globales para Formularios e Inputs --- */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    color: var(--color-3);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(178, 166, 108, 0.3);
+    border-radius: var(--radius-sm);
+    color: var(--color-5);
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.form-input:focus {
+    border-color: var(--color-2);
+    box-shadow: 0 0 10px rgba(178, 166, 108, 0.2);
+}
+
+.page-title {
+    text-align: center;
+    color: var(--color-5);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
